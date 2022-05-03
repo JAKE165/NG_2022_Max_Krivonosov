@@ -6,7 +6,6 @@ using namespace std;
 int main()
 {
     int a = 0,b = 0,c = 0,D = 0;
-    float x1 = 0,x2 = 0;
     cout << "Enter the first number: ";
     cin >> a;
     cout << "Enter the second number: ";
@@ -16,10 +15,8 @@ int main()
     D = b^2 - 4*a*c;
     if(D > 0)
     {
-      x2 = ((-b - sqrt(D))/2*a);
-      x1 = ((-b + sqrt(D))/2*a);
-      cout << "your first root = " << x1 << endl;
-      cout << "your second root = " << x2;
+      cout << "your first root = " << ((-b + sqrt(D))/2*a) << endl;
+      cout << "your second root = " << ((-b - sqrt(D))/2*a);
     }
     if(D < 0)
     {
@@ -27,8 +24,7 @@ int main()
     }
     if(D == 0)
     {
-        x1 = ((-b + sqrt(D))/2*a);
-        cout << "your root is " << x1;
+        cout << "your root is " << ((-b + sqrt(D))/2*a);
     }
     return 0;
 }
